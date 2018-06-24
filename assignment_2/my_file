@@ -1,0 +1,213 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    "hello_world.cl"
+    (
+    #2
+    _attr
+      abc
+      Int
+      #2
+      _neg
+        #2
+        _int
+          3
+        : _no_type
+      : _no_type
+    #3
+    _method
+      def
+      #3
+      _formal
+        a1
+        Int
+      #3
+      _formal
+        a2
+        Object
+      Int
+      #3
+      _block
+        #3
+        _int
+          5
+        : _no_type
+        #3
+        _int
+          5
+        : _no_type
+        #3
+        _int
+          5
+        : _no_type
+      : _no_type
+    #4
+    _method
+      ghi
+      #4
+      _formal
+        a1
+        Int
+      #4
+      _formal
+        a2
+        Object
+      Int
+      #4
+      _plus
+        #4
+        _mul
+          #4
+          _int
+            3
+          : _no_type
+          #4
+          _int
+            5
+          : _no_type
+        : _no_type
+        #4
+        _divide
+          #4
+          _int
+            6
+          : _no_type
+          #4
+          _object
+            g
+          : _no_type
+        : _no_type
+      : _no_type
+    #5
+    _method
+      j
+      Int
+      #5
+      _let
+        a
+        B
+        #5
+        _no_expr
+        : _no_type
+        #5
+        _let
+          c
+          D
+          #5
+          _no_expr
+          : _no_type
+          #5
+          _let
+            e
+            F
+            #5
+            _bool
+              0
+            : _no_type
+            #5
+            _bool
+              1
+            : _no_type
+          : _no_type
+        : _no_type
+      : _no_type
+    #6
+    _method
+      k
+      Int
+      #6
+      _let
+        y
+        Z
+        #6
+        _no_expr
+        : _no_type
+        #6
+        _let
+          a
+          B
+          #6
+          _let
+            c
+            D
+            #6
+            _no_expr
+            : _no_type
+            #6
+            _sub
+              #6
+              _divide
+                #6
+                _int
+                  3
+                : _no_type
+                #6
+                _int
+                  4
+                : _no_type
+              : _no_type
+              #6
+              _object
+                c
+              : _no_type
+            : _no_type
+          : _no_type
+          #6
+          _let
+            e
+            F
+            #6
+            _no_expr
+            : _no_type
+            #6
+            _sub
+              #6
+              _object
+                y
+              : _no_type
+              #6
+              _mul
+                #6
+                _object
+                  a
+                : _no_type
+                #6
+                _object
+                  e
+                : _no_type
+              : _no_type
+            : _no_type
+          : _no_type
+        : _no_type
+      : _no_type
+    #7
+    _method
+      l
+      Object
+      #7
+      _typcase
+        #7
+        _object
+          id
+        : _no_type
+        #8
+        _branch
+          id1
+          Type1
+          #8
+          _bool
+            1
+          : _no_type
+        #9
+        _branch
+          id2
+          Type2
+          #9
+          _bool
+            0
+          : _no_type
+      : _no_type
+    )

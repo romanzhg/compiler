@@ -1,0 +1,7 @@
+#!/bin/csh -f
+coolc -o $1.s $1.cl
+if ($status == 0) then 
+  spim -file $1.s
+else
+  echo "Compilation failed."
+endif

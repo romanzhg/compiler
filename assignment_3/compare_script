@@ -1,0 +1,5 @@
+#!/bin/csh -f
+./lexer $* | ./parser $* | ./semant $* > my_file
+./lexer $* | ./parser $* | ./semant_ref $*  > ref_file
+diff my_file ref_file
+

@@ -1,0 +1,7 @@
+#!/bin/csh -f
+make semant
+if ($status == 0) then
+  ./lexer $* | ./parser $* | ./semant $* 
+else 
+  echo "failed to compile"
+endif

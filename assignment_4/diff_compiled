@@ -1,0 +1,27 @@
+#!/bin/csh -f
+make cgen
+if ($status == 0) then 
+  ./mycoolc -o $1.s $1.cl
+  if ($status == 0) then
+    spim -file $1.s > my_out
+  else
+    echo "Compilation of the input failed."
+    exit 1
+  endif
+
+  coolc -o $1_ref.s $1.cl
+  if ($status == 0) then
+    spim -file $1_ref.s > ref_out
+  else
+    echo "Compilation of the input failed by the ref compiler."
+  endif
+
+  diff my_out ref_out
+  echo ""
+  echo "my out:"
+  echo ""
+  cat my_out
+else
+  echo "Compilation failed."
+endif
+

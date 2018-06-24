@@ -1,0 +1,8 @@
+To run
+make lexer
+./lexer t1.cl
+
+The correct lexer for reference
+./ref_lexer
+
+
